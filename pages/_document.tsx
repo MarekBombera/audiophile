@@ -14,7 +14,9 @@ export declare type DocumentInitialProps = RenderPageResult & {
 };
 
 export default class MyDocument extends Document {
-	static async getInitialProps(ctx: DocumentContext) {
+	static async getInitialProps(
+		ctx: DocumentContext
+	): Promise<DocumentInitialProps> {
 		const sheet = new ServerStyleSheet();
 		const originalRenderPage = ctx.renderPage;
 
@@ -29,32 +31,20 @@ export default class MyDocument extends Document {
 			return {
 				...initialProps,
 				styles: [
-					<Fragment key="1">
+					<>
 						{initialProps.styles}
 						{sheet.getStyleElement()}
-					</Fragment>,
+					</>,
 				],
 			};
 		} finally {
 			sheet.seal();
 		}
 	}
-	render() {
-		return (
-			<Html>
-				<Head />
-				<body>
-					<Main />
-					<NextScript />
-				</body>
-			</Html>
-		);
-	}
 }
+
 // export default class MyDocument extends Document {
-// 	static async getInitialProps(
-// 		ctx: DocumentContext
-// 	): Promise<DocumentInitialProps> {
+// 	static async getInitialProps(ctx: DocumentContext) {
 // 		const sheet = new ServerStyleSheet();
 // 		const originalRenderPage = ctx.renderPage;
 
@@ -68,15 +58,26 @@ export default class MyDocument extends Document {
 // 			const initialProps = await Document.getInitialProps(ctx);
 // 			return {
 // 				...initialProps,
-// 				styles: (
-// 					<>
+// 				styles: [
+// 					<Fragment key="1">
 // 						{initialProps.styles}
 // 						{sheet.getStyleElement()}
-// 					</>
-// 				),
+// 					</Fragment>,
+// 				],
 // 			};
 // 		} finally {
 // 			sheet.seal();
 // 		}
+// 	}
+// 	render() {
+// 		return (
+// 			<Html>
+// 				<Head />
+// 				<body>
+// 					<Main />
+// 					<NextScript />
+// 				</body>
+// 			</Html>
+// 		);
 // 	}
 // }
