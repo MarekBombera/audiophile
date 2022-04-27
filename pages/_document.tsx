@@ -1,12 +1,5 @@
-import Document, {
-	DocumentContext,
-	Head,
-	Html,
-	Main,
-	NextScript,
-} from 'next/document';
+import Document, { DocumentContext } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
-import { Fragment } from 'react';
 import { RenderPageResult } from 'next/dist/shared/lib/utils';
 
 declare type DocumentInitialProps = RenderPageResult & {

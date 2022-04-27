@@ -4,7 +4,8 @@ export const ShoppingCartStyled = styled.div`
 	position: absolute;
 	display: grid;
 	top: 110%;
-	right: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
 	width: min(100%, 320px);
 	padding: 1.75rem 1.5rem;
 	gap: 1.5rem;
@@ -13,17 +14,26 @@ export const ShoppingCartStyled = styled.div`
 	z-index: 100;
 
 	@media (min-width: 768px) {
-		top: 150%;
-		width: 350px;
+		top: 130%;
+		width: 360px;
+		transform: translate(0, 0);
 	}
 	@media (min-width: 1366px) {
 		top: 120%;
-		right: 10.5%;
+		right: 18%;
+		left: auto;
 		width: 380px;
+		transform: translate(0, 0);
+	}
+
+	@media (min-width: 1440px) {
+		right: 15.5%;
+
+		width: 385px;
 	}
 
 	@media (min-width: 1920px) {
-		right: 16.5%;
+		right: 20.75%;
 		width: 400px;
 	}
 `;

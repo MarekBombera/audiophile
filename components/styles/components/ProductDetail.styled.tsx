@@ -12,12 +12,12 @@ export const ProductDetailStyled = styled.div`
 	}
 
 	@media (min-width: 1366px) {
-		padding: 0 10rem;
+		padding: 0 15rem;
 		grid-column: 1/-1;
 	}
 
 	@media (min-width: 1920px) {
-		padding: 0 20rem;
+		padding: 0 25rem;
 	}
 `;
 

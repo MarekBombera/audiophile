@@ -5,11 +5,11 @@ export const AlsoLikeListStyle = styled.div`
 
 	@media (min-width: 1366px) {
 		grid-column: 1/-1;
-		padding: 0rem 10rem;
+		padding: 0rem 15rem;
 	}
 
 	@media (min-width: 1920px) {
-		padding: 0rem 20rem;
+		padding: 0rem 25rem;
 	}
 `;
 

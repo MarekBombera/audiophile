@@ -5,9 +5,9 @@ import headphones_category_img from '../../public/assets/shared/desktop/image-ca
 import speakers_category_img from '../../public/assets/shared/desktop/image-category-thumbnail-speakers.png';
 import earphones_category_img from '../../public/assets/shared/desktop/image-category-thumbnail-earphones.png';
 
-export const ProductCategoryList = (): JSX.Element => {
+export const ProductCategoryList = ({ mobileStyle }: any): JSX.Element => {
 	return (
-		<CategoryListStyled>
+		<CategoryListStyled mobileStyle={mobileStyle}>
 			<ProductCategory
 				img={headphones_category_img}
 				text="headphones"

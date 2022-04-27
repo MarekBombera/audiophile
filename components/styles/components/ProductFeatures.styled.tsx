@@ -9,11 +9,11 @@ export const ProductFeaturesStyled = styled.div`
 
 	@media (min-width: 1366px) {
 		display: grid;
-		padding: 0 0 0 10rem;
+		padding: 0 0 0 15rem;
 	}
 
 	@media (min-width: 1920px) {
-		padding: 0 0 0 20rem;
+		padding: 0 0 0 25rem;
 	}
 
 	h2 {

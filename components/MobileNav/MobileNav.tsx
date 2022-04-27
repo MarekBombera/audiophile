@@ -16,6 +16,7 @@ import {
 import burger_menu from '../../public/assets/shared/mobile/icon-hamburger.svg';
 import logo from '../../public/assets/shared/desktop/logo.svg';
 import icon_cart from '../../public/assets/shared/desktop/icon-cart.svg';
+import { Overlay } from '../styles/components/Overlay.styled';
 
 export const MobileNav = (): JSX.Element => {
 	const [openMenu, setOpenMenu] = useState<boolean>(false);
@@ -31,7 +32,7 @@ export const MobileNav = (): JSX.Element => {
 
 	const renderMenu = (
 		<Wrapper>
-			<ProductCategoryList />
+			<ProductCategoryList mobileStyle={'mobile'} />
 		</Wrapper>
 	);
 	return (
@@ -44,7 +45,7 @@ export const MobileNav = (): JSX.Element => {
 					<Image src={logo} alt="logo" />
 				</Link>
 			</Logo>
-			<Cart onClick={toggleCart}>
+			<Cart className="cart-animation" onClick={toggleCart}>
 				<Image src={icon_cart} alt="shopping cart" />
 			</Cart>
 			{!openCart ? null : <ShoppingCart toggleCart={toggleCart} />}

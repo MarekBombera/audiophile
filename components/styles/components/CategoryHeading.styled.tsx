@@ -10,6 +10,10 @@ export const CategoryHeadingStyled = styled.div`
 		padding: 1.75rem 0 2rem;
 	}
 
+	@media (min-width: 1366px) {
+		padding: 0.25rem;
+	}
+
 	h2 {
 		text-transform: uppercase;
 		text-align: center;

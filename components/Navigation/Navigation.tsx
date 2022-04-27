@@ -42,7 +42,7 @@ export const Navigation = (): JSX.Element => {
 					<a>earphones</a>
 				</Link>
 			</Nav>
-			<Cart onClick={toggleCart}>
+			<Cart className="cart-animation" onClick={toggleCart}>
 				<Image src={icon_cart} alt="shopping cart" />
 			</Cart>
 			{!openCart ? null : <ShoppingCart toggleCart={toggleCart} />}

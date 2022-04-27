@@ -14,11 +14,11 @@ export const FooterStyled = styled.footer`
 	}
 
 	@media (min-width: 1366px) {
-		padding: 5rem 10rem 3rem;
+		padding: 5rem 15rem 3rem;
 	}
 
 	@media (min-width: 1920px) {
-		padding: 5rem 20rem 3rem;
+		padding: 5rem 25rem 3rem;
 	}
 `;
 
@@ -57,11 +57,11 @@ export const Hr = styled.hr`
 	}
 
 	@media (min-width: 1366px) {
-		left: 10rem;
+		left: 15rem;
 	}
 
 	@media (min-width: 1920px) {
-		left: 20rem;
+		left: 25rem;
 	}
 `;
 

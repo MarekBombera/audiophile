@@ -5,9 +5,13 @@ export const MobileNavStyled = styled.nav`
 	display: grid;
 	grid-template-columns: 20px 1fr 20px;
 	align-items: center;
-	padding: 0 0 1.75rem;
+	padding: 1.75rem 1.5rem;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 	z-index: 9;
+
+	@media (min-width: 768px) {
+		padding: 2rem;
+	}
 `;
 
 export const Wrapper = styled.div`

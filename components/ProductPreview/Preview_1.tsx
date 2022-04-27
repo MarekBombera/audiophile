@@ -5,6 +5,7 @@ import {
 	PreviewStyled_1,
 	ImgWrapper_1,
 	CirclePattern,
+	Content,
 } from '../styles/components/ProductPreview.styled';
 
 import pattern_circles from '../../public/assets/home/desktop/pattern-circles.svg';
@@ -22,12 +23,14 @@ export const Preview_1 = ({ mediaImage }: Props): JSX.Element => {
 			<ImgWrapper_1>
 				<Image src={mediaImage} />
 			</ImgWrapper_1>
-			<h2>zx9 speaker</h2>
-			<p>
-				Upgrade to premium speakers that are phenomenally built to deliver truly
-				remarkable sound.
-			</p>
-			<Button text="see product" link="./speakers/zx9" />
+			<Content>
+				<h2>zx9 speaker</h2>
+				<p>
+					Upgrade to premium speakers that are phenomenally built to deliver
+					truly remarkable sound.
+				</p>
+				<Button text="see product" link="./speakers/zx9" />
+			</Content>
 		</PreviewStyled_1>
 	);
 };

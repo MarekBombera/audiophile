@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Image, { StaticImageData } from 'next/image';
+import { updateQuantityProductDetail } from '../../state/slices/shoppingCartSlice';
 
 import { Button } from '../Button/Button';
 import { ItemCounter } from '../ItemCounter/ItemCounter';
@@ -44,7 +45,13 @@ export const ProductDetail = ({
 
 	const handleAddToCartClick = (): void => {
 		for (let i in cart) {
-			if (cart[i].itemName === addToCartInfo[0]) return;
+			if (cart[i].itemName === addToCartInfo[0]) {
+				dispatch(
+					updateQuantityProductDetail([quantityCounter, addToCartInfo[0]])
+				);
+				addToCartAnimation();
+				return;
+			}
 		}
 		addToCartAnimation();
 		addToCart(dispatch, addToCartInfo[0], addToCartInfo[1], quantityCounter);

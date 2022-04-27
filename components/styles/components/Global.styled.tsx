@@ -16,7 +16,7 @@ export const GlobalStyles = createGlobalStyle`
 	--addToCart-animation: ${addToCart} 0.75s 1 ease-out forwards;
 }
 
-.kPypCb--active {
+.cart-animation--active {
 	animation: var(--addToCart-animation);
 }
 

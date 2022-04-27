@@ -10,11 +10,12 @@ export const ProductOverviewStyled = styled.div`
 	@media (min-width: 1366px) {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		padding: 0 10rem;
+		padding: 0 15rem;
+		gap: 5rem;
 	}
 
 	@media (min-width: 1920px) {
-		padding: 0rem 20rem;
+		padding: 0rem 25rem;
 	}
 `;
 
@@ -75,7 +76,7 @@ export const Content = styled.div`
 		@media (min-width: 1366px) {
 			justify-self: flex-start;
 			text-align: start;
-			width: 54%;
+			width: 60%;
 		}
 	}
 
@@ -94,7 +95,7 @@ export const Content = styled.div`
 		@media (min-width: 1366px) {
 			justify-self: flex-start;
 			text-align: start;
-			width: 70%;
+			width: 75%;
 		}
 	}
 

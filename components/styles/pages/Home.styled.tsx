@@ -12,22 +12,23 @@ export const Hero = styled.div`
 	height: 100vh;
 	width: 100%;
 	gap: 1.5rem;
-	margin-bottom: 2rem;
+	margin-bottom: 3.5rem;
 
 	@media (min-width: 600px) and (orientation: landscape) {
 		margin-bottom: 50rem;
 	}
 
 	@media (min-width: 768px) {
-		margin-bottom: 12rem;
+		margin-bottom: 7rem;
 	}
 
 	@media (min-width: 1366px) {
-		padding-left: 10rem;
+		margin-bottom: 6rem;
+		padding: 0rem 15rem;
 	}
 
 	@media (min-width: 1920px) {
-		padding: 0rem 20rem;
+		padding: 0rem 25rem;
 	}
 
 	h3 {

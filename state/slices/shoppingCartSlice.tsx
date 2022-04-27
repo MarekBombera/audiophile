@@ -49,6 +49,14 @@ export const shoppingCartSlice = createSlice({
 				}
 			}
 		},
+		updateQuantityProductDetail: (state, action) => {
+			for (let i in state.cart) {
+				if (state.cart[i].itemName === action.payload[1]) {
+					state.cart[i].quantity = state.cart[i].quantity + action.payload[0];
+					localStorage.setItem('shoppingCart', JSON.stringify(state.cart));
+				}
+			}
+		},
 		loadCartFromLocalStorage: (state, action) => {
 			state.cart = action.payload;
 		},
@@ -61,6 +69,7 @@ export const {
 	removeFromShoppingCart,
 	loadCartFromLocalStorage,
 	updateQuantity,
+	updateQuantityProductDetail,
 } = shoppingCartSlice.actions;
 
 export default shoppingCartSlice.reducer;

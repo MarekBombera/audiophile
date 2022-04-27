@@ -14,12 +14,12 @@ export const StoryStyled = styled.div`
 		grid-template-columns: 1fr 1fr;
 		grid-column: 1/-1;
 		margin: 5rem 0 8rem;
-		padding: 0 10rem;
+		padding: 0 15rem;
 		gap: 2.2rem;
 	}
 
 	@media (min-width: 1920px) {
-		padding: 0 20rem;
+		padding: 0 25rem;
 	}
 `;
 

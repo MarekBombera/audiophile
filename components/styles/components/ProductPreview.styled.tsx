@@ -16,11 +16,11 @@ export const ProductPreviewStyled = styled.div`
 	}
 
 	@media (min-width: 1366px) {
-		padding: 0 10rem;
+		padding: 0 15rem;
 	}
 
 	@media (min-width: 1920px) {
-		padding: 0 20rem;
+		padding: 0 25rem;
 	}
 `;
 
@@ -46,7 +46,7 @@ export const PreviewStyled_1 = styled.div`
 	}
 
 	button {
-		margin: 0 0 3.5rem;
+		margin: 0 auto 3.5rem;
 		background: black;
 		z-index: 1;
 
@@ -54,6 +54,10 @@ export const PreviewStyled_1 = styled.div`
 			grid-column: 2/2;
 			justify-self: flex-start;
 			align-self: flex-start;
+		}
+
+		@media (min-width: 1920px) {
+			margin: 0 0 0 5rem;
 		}
 
 		&:hover {
@@ -88,6 +92,10 @@ export const PreviewStyled_1 = styled.div`
 			margin: 0;
 			padding: 0 20rem 0 0;
 		}
+
+		@media (min-width: 1920px) {
+			margin: 0 0 0 5rem;
+		}
 	}
 
 	p {
@@ -110,6 +118,27 @@ export const PreviewStyled_1 = styled.div`
 			width: 60%;
 			margin: 0;
 		}
+
+		@media (min-width: 1920px) {
+			margin: 0 0 0 5rem;
+			width: 50%;
+		}
+	}
+`;
+
+export const Content = styled.div`
+	@media (min-width: 1366px) {
+		display: flex;
+		flex-direction: column;
+		align-self: flex-end;
+		gap: 1.5rem;
+		margin: 4rem 0 0;
+		transform: translateX(4rem);
+	}
+
+	@media (min-width: 1920px) {
+		margin: 4rem 0 0;
+		transform: translateX(1rem);
 	}
 `;
 
@@ -124,6 +153,16 @@ export const ImgWrapper_1 = styled.div`
 		grid-column: 1/1;
 		grid-row: 1/ 4;
 		align-self: flex-end;
+		margin-left: 8rem;
+		width: 390px;
+		transform: translateY(3.5%);
+	}
+
+	@media (min-width: 1920px) {
+		grid-column: 1/1;
+		grid-row: 1/ 4;
+		align-self: flex-end;
+		margin-left: 10rem;
 		width: 390px;
 		transform: translateY(3.5%);
 	}
@@ -144,6 +183,10 @@ export const CirclePattern = styled.div`
 		left: -14.5%;
 		transform: scale(1);
 	}
+
+	@media (min-width: 1920px) {
+		left: -10.75%;
+	}
 `;
 
 export const PreviewStyled_2 = styled.div`
@@ -159,6 +202,10 @@ export const PreviewStyled_2 = styled.div`
 		margin: 0 1.75rem 0;
 		font-size: 1.75rem;
 		letter-spacing: 2px;
+
+		@media (min-width: 1366px) {
+			margin: 0 6rem 0;
+		}
 	}
 
 	button {
@@ -167,6 +214,10 @@ export const PreviewStyled_2 = styled.div`
 		color: black;
 		background: none;
 		border: 1px solid black;
+
+		@media (min-width: 1366px) {
+			margin: 1.5rem 6rem 0;
+		}
 
 		&:hover {
 			@media (min-width: 1366px) {
@@ -205,10 +256,6 @@ export const PreviewStyled_3 = styled.div`
 	img {
 		border-radius: 8px;
 	}
-
-	button {
-		background: none;
-	}
 `;
 
 export const TextWrapper = styled.div`
@@ -227,13 +274,22 @@ export const TextWrapper = styled.div`
 		margin: 0;
 		font-size: 1.75rem 0 0;
 		letter-spacing: 2px;
+
+		@media (min-width: 1366px) {
+			margin: 0 4rem 0;
+		}
 	}
 
 	button {
 		margin: 1.5rem 0 0;
 		padding: 0.9rem 1.9rem;
 		color: black;
+		background: none;
 		border: 1px solid black;
+
+		@media (min-width: 1366px) {
+			margin: 1.5rem 4rem 0;
+		}
 
 		&:hover {
 			@media (min-width: 1366px) {
