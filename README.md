@@ -1,34 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Audiophile
 
-## Getting Started
+E-commerce website with Stripe integration for a fictional company called Audiophile.
 
-First, run the development server:
+## Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- Next.js, Redux, Typescript, Styled-components
+- API: Stripe
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Others
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Built mobile-first.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Stripe payments are fully integrated into the website. Since Audiophile isn't real e-commerce company and you can't buy a real product Stripe checkout is in a Test Mode.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+To test that payments are functional use **4242 4242 4242 4242** as a credit card number and fill out the rest with whatever you want.
 
-## Learn More
+In this project I'm using Redux Toolkit since it's the recommended toolset to write Redux logic. The reduction in boilerplate is nothing but amazing.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Checkout form is made with Formik and validated with Yup.
