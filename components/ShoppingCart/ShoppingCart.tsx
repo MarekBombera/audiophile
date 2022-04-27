@@ -64,7 +64,7 @@ export const ShoppingCart = ({ toggleCart }: any): JSX.Element => {
 					<p>Total</p>
 					<h3>{`$ ${total}`}</h3>
 				</Total>
-				<Link href={cart.length === 0 ? '' : '/checkout'}>
+				<Link href={cart.length === 0 ? '' : '/checkout'} passHref>
 					<CheckoutButton onClick={cart.length === 0 ? null : toggleCart}>
 						Checkout
 					</CheckoutButton>

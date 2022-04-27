@@ -1,12 +1,17 @@
 import Document, {
 	DocumentContext,
-	DocumentInitialProps,
 	Head,
 	Html,
 	Main,
 	NextScript,
 } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
+import { Fragment } from 'react';
+import { RenderPageResult } from 'next/dist/shared/lib/utils';
+
+export declare type DocumentInitialProps = RenderPageResult & {
+	styles?: React.ReactElement[] | React.ReactFragment;
+};
 
 export default class MyDocument extends Document {
 	static async getInitialProps(ctx: DocumentContext) {
@@ -24,10 +29,10 @@ export default class MyDocument extends Document {
 			return {
 				...initialProps,
 				styles: [
-					<>
+					<Fragment key="1">
 						{initialProps.styles}
 						{sheet.getStyleElement()}
-					</>,
+					</Fragment>,
 				],
 			};
 		} finally {

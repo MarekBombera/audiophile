@@ -16,7 +16,7 @@ export const Button = ({ text, link, onClick, type }: Props): JSX.Element => {
 	};
 
 	const hrefButton = (
-		<Link href={addHref()}>
+		<Link href={addHref()} passHref>
 			<ButtonStyled>{text}</ButtonStyled>
 		</Link>
 	);
