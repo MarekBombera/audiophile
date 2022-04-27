@@ -31,10 +31,10 @@ export default class MyDocument extends Document {
 			return {
 				...initialProps,
 				styles: [
-					<Fragment key="1">
+					<>
 						{initialProps.styles}
 						{sheet.getStyleElement()}
-					</Fragment>,
+					</>,
 				],
 			};
 		} finally {
