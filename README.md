@@ -4,7 +4,10 @@ E-commerce website with Stripe integration for a fictional company called Audiop
 
 ## Stack
 
-- Next.js, Redux, Typescript, Styled-components
+- Next.js
+- Redux
+- Typescript 
+- Styled-components
 - API: Stripe
 
 ## Others
